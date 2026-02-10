@@ -1,0 +1,27 @@
+{
+  "name": "@agent-dashboard/gateway",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "cli": "tsx src/cli.ts",
+    "db:init": "tsx src/db/init.ts"
+  },
+  "dependencies": {
+    "@agent-dashboard/shared": "*",
+    "@anthropic-ai/sdk": "^0.39.0",
+    "better-sqlite3": "^11.7.0",
+    "dotenv": "^16.4.1",
+    "uuid": "^9.0.0",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.8",
+    "@types/uuid": "^9.0.7",
+    "@types/ws": "^8.5.10",
+    "tsx": "^4.7.0"
+  }
+}

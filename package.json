@@ -1,0 +1,30 @@
+{
+  "name": "agent-dashboard",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Personal AI Agent Dashboard & Coordination System",
+  "workspaces": [
+    "packages/shared",
+    "packages/gateway",
+    "packages/dashboard"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:gateway\" \"npm run dev:dashboard\"",
+    "dev:gateway": "npm run dev -w packages/gateway",
+    "dev:dashboard": "npm run dev -w packages/dashboard",
+    "build": "npm run build -w packages/shared && npm run build -w packages/gateway && npm run build -w packages/dashboard",
+    "build:shared": "npm run build -w packages/shared",
+    "build:gateway": "npm run build -w packages/gateway",
+    "build:dashboard": "npm run build -w packages/dashboard",
+    "db:init": "npm run db:init -w packages/gateway",
+    "cli": "npm run cli -w packages/gateway",
+    "lint": "eslint packages/*/src/**/*.{ts,tsx}",
+    "typecheck": "tsc --build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "concurrently": "^8.2.2",
+    "eslint": "^9.0.0",
+    "typescript": "^5.3.3"
+  }
+}
