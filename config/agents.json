@@ -1,0 +1,34 @@
+[
+  {
+    "id": "coordinator",
+    "name": "Coordinator",
+    "role": "Task Router & Coordinator",
+    "description": "Routes tasks to specialized agents, manages priorities, and oversees workflow",
+    "capabilities": ["routing", "planning", "coordination", "prioritization"],
+    "maxConcurrentTasks": 1
+  },
+  {
+    "id": "general",
+    "name": "General Assistant",
+    "role": "General Purpose Agent",
+    "description": "Handles miscellaneous tasks, research, and analysis",
+    "capabilities": ["research", "analysis", "writing", "summarization", "general"],
+    "maxConcurrentTasks": 1
+  },
+  {
+    "id": "accounting",
+    "name": "Accounting Agent",
+    "role": "Financial Operations",
+    "description": "Processes invoices, generates reports, tracks expenses and revenue",
+    "capabilities": ["invoices", "reports", "expenses", "accounting", "financial"],
+    "maxConcurrentTasks": 1
+  },
+  {
+    "id": "comms",
+    "name": "Communications Agent",
+    "role": "Message & Communication Handler",
+    "description": "Monitors and responds to emails, WhatsApp, and Telegram messages",
+    "capabilities": ["email", "whatsapp", "telegram", "messaging", "communication"],
+    "maxConcurrentTasks": 1
+  }
+]

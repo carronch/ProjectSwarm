@@ -1,0 +1,26 @@
+{
+  "primary": "claude-sonnet",
+  "fallback": "claude-haiku",
+  "models": {
+    "claude-sonnet": {
+      "id": "claude-sonnet",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-20250514",
+      "apiKeyEnv": "ANTHROPIC_API_KEY",
+      "maxTokens": 4096,
+      "temperature": 0.7,
+      "costPerInputToken": 0.000003,
+      "costPerOutputToken": 0.000015
+    },
+    "claude-haiku": {
+      "id": "claude-haiku",
+      "provider": "anthropic",
+      "model": "claude-3-5-haiku-20241022",
+      "apiKeyEnv": "ANTHROPIC_API_KEY",
+      "maxTokens": 4096,
+      "temperature": 0.7,
+      "costPerInputToken": 0.0000008,
+      "costPerOutputToken": 0.000004
+    }
+  }
+}
